@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inl">Número1:</label>
+            <input type="number" name="nl" id="inl" required oninput="isoma.innerHTML = Number(inl.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Número2</label>
+            <input type="number" name="n2" id="in2"
+            oninput="isoma.innerHTML = Number(inl.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">SOMA:</label>
+            <output name="isoma" id="isoma">
+                0
+            </output>
+        </p>
+    <p>
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="LIMPAR">
+    </p>
+
+    </form>
+</body>
+</html>

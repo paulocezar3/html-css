@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="" method="post">
+        <p>
+            <label for="iest">ESTADO:</label>
+            <select name="est" id="iest">
+                <optgroup label="REGIÂO SUDESTE">
+                    <option value="">--ESCOLHA--</option>
+                    <option value="SP">SÂO PAULO</option>
+                    <option value="rj">RIO DE JANEIRO</option>
+                    <OPtion value="MG">MINAS GERAIS</OPtion>
+                </optgroup>
+
+                <optgroup label="REGIÂO NORDESTE">
+                    <option value="MA">MARANHÂO</option>
+                    <option value="PE">PERNABUCO</option>
+                    <option value="RN">RIO GRANDE DO NORTE</option>
+                </optgroup>
+            </select>
+            <p>
+                <label for="iprof">PROFISSÂO:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="ADM">ADMINISTRADOR</option>
+                    <option value="cont">CONTABILISTA</option>
+                    <option value="DEV">DESENVOLVEDOR</option>
+                    <option value="PROF">PROFESSOR</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="imsg">MENSAGEM:</label>
+                <textarea name="msg" id="imsg" cols="10" rows="1"></textarea>
+            </p>
+        </p>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+
+
+    </form>
+</body>
+</html>
