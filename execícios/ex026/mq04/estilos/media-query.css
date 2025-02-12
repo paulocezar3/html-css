@@ -1,2 +1,102 @@
 @charset "utf-8";
 /* todas as mídias */
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background: url(../imagens/back-print.jpg);
+    }
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main::after{content: 'Essa impressão foi feita através do site www.paulolindo.com' ;
+        text-decoration: overline;
+    }
+    main >h1{
+        text-shadow: none;
+        color: black;
+    }
+
+        #phone{
+            display: none;
+        }
+        #tablet{
+            display: none;
+        }
+        #print{
+            display: block;
+        }
+        #PC{
+            display: none;
+        }
+        #TV{
+            display: none;
+        }
+    }
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background: url(../imagens/back-tablet.jpg);
+    }
+    #phone{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #PC{
+        display: none;
+    }
+    #TV{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background: url(../imagens/back-pc.jpg) left center;
+
+        #tablet{
+            display: none;
+        }
+        #print{
+            display: none;
+        }
+        #PC{
+            display: block;
+        }
+        #TV{
+            display: none;
+        }
+        #phone{
+            display: none;
+        }
+    }
+    
+}
+@media screen and (min-width:1200px){
+    body{
+        background: url(../imagens/back-tv.jpg) center center;
+    }
+    main{
+        width: 700px;
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #PC{
+        display: none;
+    }
+    #TV{
+        display: block;
+    }
+}
